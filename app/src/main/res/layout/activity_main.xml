@@ -17,13 +17,105 @@
         />
 
     <ImageView
+        android:id="@+id/saldo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="20dp"
+        android:src="@drawable/saldo"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/faturas"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="20dp"
+        android:src="@drawable/faturas"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/texto_saldo"
+        android:layout_margin="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
-
+        app:layout_constraintTop_toBottomOf="@+id/saldo"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Saldo"
+        android:textSize="25dp"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textStyle="bold"
         />
+    <ImageView
+        android:id="@+id/transferencia"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/transferencias"
+
+        app:layout_constraintEnd_toStartOf="@id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/texto_saldo"
+         />
+
+    <TextView
+        android:id="@+id/texto_fatura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Fatura"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/faturas" />
+
+    <ImageView
+        android:id="@+id/poupanca"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/poupanca"
 
 
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/texto_fatura" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:text="Poupança"
+    android:textAllCaps="true"
+    android:textColor="@color/black"
+    android:textSize="25dp"
+    android:textStyle="bold"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="@+id/guideline"
+    app:layout_constraintTop_toBottomOf="@+id/poupanca" />
+
+    />
 
 
-  </androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Transferencia"
+        android:layout_margin="20dp"
+        android:textAllCaps="true"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/transferencia"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
