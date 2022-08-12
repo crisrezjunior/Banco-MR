@@ -1,26 +1,23 @@
 package com.rezende.bancomr
 
-import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.rezende.bancomr.databinding.ActivitySaldoBinding
+import com.rezende.bancomr.databinding.ActivityFaturaBinding
 
-class Saldo : AppCompatActivity() {
-    lateinit var    binding: ActivitySaldoBinding
-    @SuppressLint("UseCompatLoadingForDrawables")
+class Fatura : AppCompatActivity() {
+    lateinit var binding: ActivityFaturaBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-         binding = ActivitySaldoBinding.inflate(layoutInflater)
+        binding = ActivityFaturaBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        //esconder Action Bar
         supportActionBar!!.hide()
 
-        val toolbar = binding.toolbarSaldo
-        toolbar.title= "Saldo"
+        val toolbar = binding.faturaToolbar
+        toolbar.title = "Faturas"
         toolbar.setTitleTextColor(getColor(R.color.white))
-        toolbar.setTitleMargin(220,0,100,0)
+        toolbar.setTitleMargin(220, 0, 100, 0)
         toolbar.setBackgroundColor(getColor(R.color.background_menu))
         toolbar.navigationIcon = getDrawable(R.drawable.ic_baseline_arrow_back_ios_new_24)
         toolbar.setNavigationOnClickListener {
@@ -28,9 +25,6 @@ class Saldo : AppCompatActivity() {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
             finish()
-
         }
-
-
     }
 }

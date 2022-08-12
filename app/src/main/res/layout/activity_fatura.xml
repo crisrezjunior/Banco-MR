@@ -4,20 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Saldo"
+    tools:context=".Fatura"
     android:orientation="vertical"
     >
 <androidx.appcompat.widget.Toolbar
-    android:id="@+id/toolbar_saldo"
+    android:id="@+id/fatura_toolbar"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    />
+    android:layout_height="wrap_content"/>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="50dp"
-        android:text="Saldo Disponivel"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="60dp"
+
+
+        android:text="Resumo das faturas"
+        android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="30sp"
         android:textStyle="bold"
@@ -27,13 +30,18 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Seu saldo é de "
-        android:textSize="22sp"
-        android:layout_marginTop="15dp"
-        android:layout_marginStart="30dp"
-        android:textColor="#3C3C3C"
-
+        android:text="Data de vencimento: 05/10/2022 Saldo Parcial: R$500,00"
+        android:elegantTextHeight="true"
+        android:textSize="25sp"
+        android:layout_margin="20dp"
+        android:textStyle="bold"
         />
 
-
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="60dp"
+        android:text="Pagar Fatura"
+        android:textSize="30sp"
+/>
 </LinearLayout>
