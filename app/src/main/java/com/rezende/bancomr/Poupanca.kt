@@ -14,7 +14,7 @@ class Poupanca : AppCompatActivity() {
 
         supportActionBar!!.hide()
 
-        val toolbar = binding.toolbarPoupanca
+        val toolbar = binding.toolbarpoupanca
         toolbar.title = "Poupança"
         toolbar.setTitleTextColor(getColor(R.color.white))
         toolbar.setTitleMargin(150, 0, 100, 0)
